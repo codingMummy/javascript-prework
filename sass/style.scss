@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #f7f1e3;
+}
+
+.game {
+    width: 100%;
+    padding: 50px 20px 60px 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+p:nth-child(2) {
+    font-weight: 700;
+}
+
+p:nth-child(3) {
+    padding: 20px 15% 40px 15%;
+}
+
+#messages {
+    padding: 50px 0 30px 0;
+}
+
+#result {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#button-paper,
+#button-rock,
+#button-scissors {
+    color: #84817a;
+    border-color: #84817a;
+    background-color: #ffda79;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: 2px solid;
+    text-align: center;
+    display: inline-block;
+    min-width: 160px;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.footer {
+    padding-left: 50px;
+}

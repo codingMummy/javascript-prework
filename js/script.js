@@ -88,8 +88,16 @@ function displayResult(argPlayerMove, argComputerMove) {
 }
 
 function displayWinCounters() {
-    var result = document.getElementById('result');
-    result.textContent = resultPlayer + ' - ' + resultComputer;
+    var ss = document.getElementById('result');
+    ss.textContent = resultPlayer + ' - ' + resultComputer;
+
+    if (resultComputer - resultPlayer >= 10) {
+        ss.className = 'red';
+    } else {
+        ss.className = 'green';
+    }
+
+
 }
 
 // playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
