@@ -91,7 +91,7 @@ function displayWinCounters() {
     const ss = document.getElementById('result');
     ss.textContent = resultPlayer + ' - ' + resultComputer;
 
-    if (resultComputer - resultPlayer >= 10) {
+    if (resultComputer - resultPlayer >= 5) {
         ss.className = 'red';
     } else {
         ss.className = 'green';
@@ -106,7 +106,7 @@ function displayWinCounters() {
 // console.log('ruch gracza to: ' + playerMove);
 
 
-var buttonRock, buttonPaper, buttonScissors;
+let buttonRock, buttonPaper, buttonScissors;
 
 function buttonClicked(playerMove) {
     clearMessages();
