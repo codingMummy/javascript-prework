@@ -49,7 +49,7 @@ printMessage('Twój ruch: ' + playerMove);*/
 
 
 
-let argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput, resultPlayer = 0,
+let computerMove, randomNumber, resultPlayer = 0,
     resultComputer = 0;
 
 function getMoveName(argMoveId) {
@@ -106,8 +106,6 @@ function displayWinCounters() {
 // console.log('ruch gracza to: ' + playerMove);
 
 
-let buttonRock, buttonPaper, buttonScissors;
-
 function buttonClicked(playerMove) {
     clearMessages();
     console.log(playerMove + ' został kliknięty');
@@ -119,17 +117,17 @@ function buttonClicked(playerMove) {
     displayWinCounters()
 }
 
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function () {
     buttonClicked('kamień');
 })
 
-buttonPaper = document.getElementById('button-paper');
+const buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function () {
     buttonClicked('papier');
 })
 
-buttonScissors = document.getElementById('button-scissors');
+const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function () {
     buttonClicked('nożyce');
 });
