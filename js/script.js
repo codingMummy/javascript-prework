@@ -88,7 +88,7 @@ function displayResult(argPlayerMove, argComputerMove) {
 }
 
 function displayWinCounters() {
-    var ss = document.getElementById('result');
+    const ss = document.getElementById('result');
     ss.textContent = resultPlayer + ' - ' + resultComputer;
 
     if (resultComputer - resultPlayer >= 10) {
