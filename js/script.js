@@ -49,7 +49,7 @@ printMessage('Twój ruch: ' + playerMove);*/
 
 
 
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput, resultPlayer = 0,
+let argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput, resultPlayer = 0,
     resultComputer = 0;
 
 function getMoveName(argMoveId) {
